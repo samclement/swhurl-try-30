@@ -38,7 +38,7 @@ watchFlags({
 
 const timer = setInterval(() => void work(), intervalMs);
 void work();
-logger.info({ service: serviceName, interval_ms: intervalMs }, "worker started");
+logger.info({ service: serviceName, interval_ms: intervalMs, proof_revision: 2 }, "worker started");
 
 // An example of receiving: log every event this app declared it subscribes to (events.subscribe in
 // swhurl.yaml). Each is handled inside the publisher's trace; throw to receive it again.
